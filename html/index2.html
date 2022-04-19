@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/f0729c0c03.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<title>The Sill</title>
+
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+*{font-family:'Playfair Display', serif;}
+*{box-sizing:border-box;}
+*{margin:0; padding:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+
+
+/*header*/
+.top {width:100%; height:25px; background-color:rgb(0, 154, 123);margin:0 auto;} 
+.top > #toplogo {color:#fff; text-align:center;}
+.bottom {width:1260px; height:150px; margin:0 auto;}
+
+#logo {width:195px; height:48px; float:left; background-color:green; margin:25px 0 0 0;}
+#logo > img {width:100%; height:100%;}
+.imgbox1 {width:125px; height:30px;display:inline-block; margin:25px 0 0 0px;}
+.imgbox1 > a > img {width:30px; height:30px;float:left;}
+.imgbox3 {width:30px; height:30px;display:inline-block; margin:25px 0 0 0px;}
+.imgbox3 > a > img {width:100%; height:100%;}
+.imgbox2 {width:60px; height:30px; display:inline-block; margin:25px 0 0 0px;}
+.imgbox2 > a > img {width:30px; height:30px;float:left;}
+.text1 > a {text-decoration: none;color:#000;}
+.text2 > a {text-decoration: none; font-style:italic;color:#817f7c;}
+
+header > div:nth-of-type(2) {margin:0 0 0 520px;}
+
+.text1 {font-size:10px;float:left;margin:5px 0 0 0; color:#2d2a24;}
+.text2 {font-size:10px;float:left;margin:0px 0 0 0; color:#817f7c;}
+nav {width:1200px; height:41px;float:left; margin:20px 0 0 0;}
+nav {text-align:center; font-size:12px;}
+
+nav > ul > li {display:inline-block; margin:10px 50px 0 5px; float:left;}
+nav > ul > li > a {font-size:17px; font-weight:bold; text-decoration:none;color:#000;}
+nav > ul > li > a:hover {color:rgb(0 171 132); font-style:italic;}
+
+
+/*slider*/
+#slider {width:100%; height:858px; margin:0 auto;background-image: url("img/23.jpg"); background-size:cover; }
+.textbox {width:500px; height:200px; margin:200px 400px; float:left;}
+.textbox > p {font-size:12px;margin:10px 0 0 0;}
+.textbox > button {background-color: rgb(0 171 132); border:0; padding:15px 10px 14px; color:#fff; opacity:0.8;margin:10px 0 0 0;}
+.textbox > button:hover{opacity:1.2;}
+.textbox > h1 {font-size:30px;width:500px; height:120px;position:center;}
+
+
+/*main1*/
+.article1 > h3 { color:#2d2a24; font-size:30px; margin:30px 0 0 12px;}
+.article1 {width:1210px; height: 616px; margin:0 auto;}
+.article1 > .group1 > a > img {width:100%; height:100%;}
+.article1 > .group1 {width:270px; height:352px;float:left; margin: 30px 5px 0px 30px; position:relative;}
+.article1 > div:first-of-type {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 30px 0px 1px;}
+.article1 > div:nth-of-type(2) {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 30px 0px 10px;}
+.article1 > div:nth-of-type(3) {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 30px 0px 10px;}
+.article1 > div:last-of-type {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 0px 0px 10px;}
+.icon {background-color:rgb(75 216 200); color:#fff; position:absolute; top:20px; left:0px; padding:10px;  border-radius:2px;}
+
+
+.productcard {width:192.55px; height:25px;font-size:16px; margin:10px 0 0 0;}
+.postcard {width:356.09; height:30px;font-size:12px; margin:0 auto; }
+
+.dollar > a {text-decoration:none; text-align:left; font-size:12px; color:#2d2a24;}
+.plusicon > a {text-decoration:none; text-align:right; font-size:12px; color:#817f7c; margin:0 0 0 132px; font-style:italic;}
+
+
+/*main2*/
+.article2 {width:1210px; height: 665px;margin:0 auto;}
+.article2 > h4 { color:#2d2a24; font-size:30px; margin:0 0 0 12px;}
+.article2 > .group2 > a > img {width:100%; height:100%;}
+.article2 > .group2 > span > a{font-size:20px;}
+.article2 > .group2 > span > a {text-decoration:none;  color:#2d2a24;}
+.article2 > .group2 > span > a:hover {color:green; font-style:italic; }
+.iconbox {display:inline-block;font-size:20px;}
+
+.article2 > div:first-of-type {width:375px; height:498px;display:inline-block; margin:0px 36px 0px 0px; padding:20px;}
+.article2 > div:nth-of-type(2) {width:375px; height:498px;display:inline-block; margin:0px 36px 0px 0px;padding:20px;}
+.article2 > div:last-of-type {width:375px; height:498px;display:inline-block; margin:0px 0px 0px 0px;padding:20px;}
+
+
+/*main3*/
+.article3 {width:1210px; height: 1151px; margin:0 auto;}
+.article3 > h5 { color:#2d2a24; font-size:30px; margin:0 0 0 12px;}
+.article3 > .group3 {width:700px; height:900px;float:left; margin:30px 0 0 0;}
+.article3 > .group3 > a > img {width:100%; height:100%;}
+
+.article3 > .group4 > .productcard1 {width:252.4px; height:25px;font-size:15px;}
+.article3 > .group4 > a > img {width:100%; height:100%;}
+.article3 > div:nth-of-type(2) {width:236px; height:308px; display:inline-block; background-color:bisque; margin:30px 13px 0 17px;}
+.article3 > div:nth-of-type(3) {width:236px; height:308px; display:inline-block; background-color:bisque; margin:30px 0 0 0px;}
+.article3 > div:nth-of-type(4) {width:236px; height:308px; display:inline-block; background-color:bisque; margin:60px 13px 0 17px;}
+.article3 > div:last-of-type {width:236px; height:308px; display:inline-block; background-color:bisque; margin:60px 0px 0 0px;}
+
+/*main4*/
+.article4 > .group4 > span {font-size:15px; margin:30px 0 0 0;}
+.productcard2 {width:356.09; height:30px;font-size:12px; margin:10px 0 0 0;}
+
+.dollar1 > a {font-size:12px; text-decoration:none; text-align:left; color:#2d2a24;}
+.plusicon1 > a {text-decoration:none; text-align:right; font-size:12px; color:#817f7c; margin:0 0 0 80px; font-style:italic;}
+.group5 {width:370px; height:300px; float:left;  margin:10px 30px 0 0;}
+.group5 > img {width:30%; height:30%;}
+.feature {font-size:17px; padding: 0 0 8px; color:#2d2a24;}
+.subtitle {font-size:12px; color:#2d2a24;}
+
+
+.article4 > h6 { color:#2d2a24; font-size:24px;}
+.bio{font-size:12px; color:#2d2a24; margin:10px 0 0 0;}
+
+.article4 {width:1210px; height: 400px; margin:0 auto;}
+
+/*footer1*/
+.brick {width:100%; height:768px;  margin:0 auto; position:relative;}
+.brick > .block1 {width:50%; height:100%;  margin:0 auto;float:right;}
+.brick > .block1 > img {width:100%; height:100%;}
+.textbox2 {width:600px; height:500px; float:left;margin:50px 0 0 350px; position:absolute;}
+.textbox2 > h2 {font-size:45px;width:700px; height:200px;position:center; }
+.textbox2 > p {width:400px; height:50px; font-size:12px;}
+.textbox2 > button {background-color: rgb(0 171 132); border:0; color:#fff; opacity:0.8; padding:15px 10px 14px;margin:20px 0 0 0;}
+.textbox2 > button:hover{opacity:1.2;}
+
+/*footer2*/
+.brick1 {width:100%; height:302px; margin:20px 0 0 0;  background-size:contain; background-repeat:no-repeat;}
+.brick1 > img {width:100%; height:100%;}
+#rollbox {width:1212px; height:239px; background-color:beige; margin:100px auto;}
+.rollbox1 {width:239px; height:239px; background-color:aquamarine; margin:1px 0 0 3px;display:inline-block; float:left; position:relative; overflow:hidden;}
+.rollbox1 > a > img {width:100%; height:100%;}
+#rolltext {width:100%; height:100%; background-color:rgba(0,0,0,0); transition:all 0.5s ease; position:absolute; top:0; left:0; text-align:center; color:#fff;}
+#rolltext:hover {background-color:rgb(0 171 132);}
+#rolltext span {background-color:rgba(0, 0, 0, 0);opacity:0;font-weight:bold; font-size:20px; position:absolute; top:130px; left:0; display:inline-block; text-align:center; width:100%; height:100%;}
+#rolltext span:hover {color:#fff;opacity:1;}
+
+
+/*footer3*/
+.brick2 {width:100%; height: 640px; background-color:#f9f8f7; margin:0 auto; background-image:url("img/background3.jpg");background-size:contain; background-repeat:no-repeat;}
+
+#allbox {width:1260px; height:684px;margin:0 auto;}
+#allbox > #box1 {width:926px; height:180px; display:inline-block;margin:0 auto;}
+#allbox > #box1 > img {height:180px;float:left;padding:10px;}
+#allbox > #box1 > h1 {font-size:24px;margin:10px 0 0 50px;}
+#allbox > #box1 > p {font-size:12px; width:700px; margin:20px 0 10px 0;}
+#allbox > #box1 > span {font-size:20px;}
+#allbox > #box1 > span > a {text-decoration:none;color:#000;}
+#allbox > #box1 > span > a:hover {color:green;font-style:italic;}
+#allbox > div:nth-of-type(2) {width:830px; height:222px; display:inline-block;float:left;margin:10px 10px 0 0;}
+#allbox > .box2 > .textbox3 {width:180px; height:210px;  display:inline-block;margin:20px 10px 0 10px;}
+#allbox > .box2 > .textbox3 > p {font-style:italic;color:#817f7c;font-size:12px;font-weight:bold;}
+#allbox > .box2 > .textbox3 > ul > li {margin:30px 0 0 0; font-size:10px;}
+#allbox > .box2 > .textbox3 > ul > li > a {text-decoration:none; color:#000;}
+#allbox > .box2 > .textbox3 > ul > li > a:hover {color:green; font-style:italic;}
+#allbox > div:nth-of-type(3) {width:350px; height:322px; display:inline-block;margin:20px 0 0 70px;}
+#allbox > .box2 > h2 {font-size:24px; color:#000; margin:10px;}
+#allbox > .box2 > p {margin:10px 0 0 0; font-size:16px;margin:10px;}
+
+form > input {width:309px; height:50px;margin:30px 0 0 10px;}
+form > button {width:309px; height:50px;margin:20px 0 0 10px;background-color:rgb(0 171 132); color:#fff;border:0;}
+
+.servicetext {margin:10px 10px 0 10px;display:inline-block;}
+.servicetext > a {text-decoration:none;color:#000;}
+.servicetext > a:hover{color:green;}
+
+#allbox > .number1 {float:left;font-size:30px;margin:70px 0 0 0;}
+#allbox > .number2 {float:right;font-size:30px;margin:70px 0 0 0;}
+
+/*footer4*/
+#lastbox {width:100%;height:30px;background-color:rgb(0 171 132);float:left; display:inline-block;}
+#lasttext1 > .number3 {width:500px; height:24px; margin:5px 0 0 320px; font-size:12px;color:#fff;}
+#lasttext2 {width:700px; height:24px; margin:-20px 0 0 1180px; font-size:12px;}
+
+#lasttext2 >  ul > li > a {text-decoration:none; color:#000;float:left; display:inline-block;margin:-5px 0 0 20px; color:#fff;}
+
+
+
+
+</style>
+
+<title></title>
+</head>
+<body>
+
+<!--header-->  
+<header class = "top">
+  <div id="toplogo">
+    New in!Floor plants and large planters
+   </div>  
+  </header1>
+<header class = "bottom">
+  <div id="logo">
+    <img src="img/5.jpg" alt="logo">
+  </div>
+
+  <div class="imgbox1">
+   <a href="#"> <img src = "img/icon4.jpg" alt="icon4"> </a>
+    <span class="text1"> <a href="#"> Resources</a></span>
+    <span class="text2"> <a href="#"> FAQ, Blog, Support</a></span>
+  </div>
+  <div class="imgbox1">
+    <a href="#">  <img src = "img/icon5.jpg" alt="icon5"> </a>
+    <span class="text1"> <a href="#"> Visit The Sill</a></span>
+    <span class="text2">  <a href="#"> Store Locator</a></span>  
+  </div>
+  <div class="imgbox1">
+    <a href="#">  <img src = "img/icon6.jpg" alt="icon6"></a>
+    <span class="text1"> <a href="#"> Hello, Sign In</a></span>
+    <span class="text2"> <a href="#"> Your Account</a></span>
+  </div>
+  <div class="imgbox3">
+    <a href="#">  <img src = "img/icon7.jpg" alt="icon7"></a>
+  </div>
+  <div class="imgbox2">
+    <a href="#">   <img src = "img/icon8.jpg" alt="icon8"></a>
+    <span class="text1"> <a href="#"> (0)</a></span>
+  </div>
+
+
+<nav>
+  <ul>
+    <li><a href="#">Plants</a></li>
+    <li><a href="#">Mother's Day</a></li>
+    <li><a href="#">New Arrivals</a></li>
+    <li><a href="#">Plant Care</a></li>
+    <li><a href="#">Home & Decor</a></li>
+    <li><a href="#">Gifts</a></li>
+    <li><a href="#">Corporate Gifting</a></li>
+    <li><a href="#">Subscriptions</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!--slider-->
+<div id="slider">
+    <div class = "textbox">
+      <h1>Gifts For All <br> Moms</h1>
+      <p>Show them your appreciation with a gift from our Mother’s Day edit.</p>
+      <button>Shop now</button>
+    </div>
+  </div>
+
+<!--main1-->
+<section class="article1">
+  <h3>Gifts They’ll Love</h3>
+  <div class="group1">
+    <a href="#"><img src="img/11.jpg" alt="flower"></a>
+    <span class="icon">☆Pet-Friendly</span>
+
+      <div class="productcard">Petite Sunset Orchid</div>
+      <div class="postcard"><em>choose your planter style<br> & color</em></div>
+      <br>
+      <span class="dollar"><a href="#">$78</a></span>
+      <span class="plusicon"><a href="#">+ more options</a></span>
+    
+  </div>
+  <div class="group1">
+    <a href="#"><img src="img/12.jpg" alt="flower"></a>
+      <span class="icon">☆Best Seller</span>
+      <div class="productcard">Monstera Deliciosa</div>
+      <div class="postcard"><em>choose your planter style<br> & color</em></div>
+      <br>
+      <span class="dollar"><a href="#">$38 - 88</a></span>
+      <span class="plusicon"><a href="#">+ more options</a></span>
+  </div>
+  <div class="group1">
+    <a href="#"><img src="img/13.jpg" alt="flower"></a>
+    <span class="icon">☆New Arrival</span>
+      <div class="productcard">Tradescantia Pink Panther</div>
+      <div class="postcard"><br></div>
+      <br>
+      <span class="dollar"><a href="#">$28 - 46</a></span>
+      <span class="plusicon"><a href="#">+ more options</a></span>
+
+  </div>
+<div class="group1">
+  <a href="#"><img src="img/14.jpg" alt="flower"></a>
+    <div class="productcard">I Dig You Kit</div>
+    <div class="postcard"><em>Giftable kit for fellow <br>plants lovers</em></div>
+    <br>
+    <span class="dollar"><a href="#">$97</a></span>
+    <span class="plusicon"><a href="#">+ more options</a></span>
+</div>
+</section>
+
+<!--main2-->
+<section class="article2">
+   <h4>Featured Collections</h4>
+   <div class="group2">
+     <a href="#"><img src="img/15.jpg" alt="flower1"></a>
+     <span><a href="#">Flowers & Botanicals
+      <div class="iconbox">
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </div>
+     </a>
+     </span>
+     
+   </div>
+   <div class="group2">
+    <a href="#"><img src="img/16.jpg" alt="plant"></a>
+    <span><a href="#">Plant Care
+      <div class="iconbox">
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </div>
+    </a>
+    </span>
+   </div>
+   <div class="group2">
+    <a href="#"><img src="img/17.jpg" alt="plant2"></a>
+    <span><a href="#">Flowers & Botanicals
+      <div class="iconbox">
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </div>
+    </a>
+  </span>
+   </div>
+</section>
+
+<!--main3-->
+<section class="article3">
+   <h5>Go Big, At Home</h5>
+   <div class="group3">
+     <a href="#"><img src="img/18.jpg" alt="plant3"></a>
+     
+  
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/19.jpg" alt="plant4"></a>
+    <div class="productcard1">Large Fan Palm</div>
+     <div class="productcard2"><em>Arrives in 10" diameter <br>grow pot</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$88 - 158</a></span>
+    <span class="plusicon1"><a href="#">+ more options</a></span>
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/20.jpg" alt="plant5"></a>
+    <div class="productcard1">Large Fiddle Leaf Fig Tree</div>
+      <div class="productcard2"><em>Arrives in 10" diameter <br>grow pot</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$118</a></span>
+    
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/21.jpg" alt="plant6"></a>
+    <div class="productcard1">Large ZZ Plant</div>
+      <div class="productcard2"><em>choose your planter style<br> & color</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$108 - 179</a></span>
+    <span class="plusicon1"><a href="#">+ more options</a></span>
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/22.jpg" alt="plant7"></a>
+    <div class="productcard1">Large Snake Laurentii</div>
+      <div class="productcard2"><em>Arrives in 10" diameter <br>grow pot</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$88 - 158</a></span>
+    <span class="plusicon1"><a href="#">+ more options</a></span>
+   </div>
+</section>
+
+<!--main4-->
+<section class="article4">
+   <h6>To be human is to experience biophilia.</h6>
+   <p class="bio"><em>[bio-feelya]</em> — Our innate desire to connect with nature. It’s in our DNA.</p>
+   <br>
+   <hr>
+   <div class="group5">
+     <img src="img/icon1.jpg" alt="icon1">
+     <p class="feature">Carbon Neutral Shipping</p>
+     <p class="subtitle">Since we love nature & our planet, all of our orders are shipped via UPS carbon neutral shipping—keeping our carbon footprint as small as possible!</p>
+   </div>
+   <div class="group5">
+    <img src="img/icon2.jpg" alt="icon2">
+    <p class="feature">30-Day Customer Happiness Guarantee</p>
+    <p class="subtitle">Our team preps, prunes, & carefully packs every order—meaning lots of care goes into every step. If your plant arrives damaged or unhealthy, we will replace it for free!</p>
+   </div>
+   <div class="group5">
+    <img src="img/icon3.jpg" alt="icon3">
+    <p class="feature">Shop Online & In Store</p>
+    <p class="subtitle">Enjoy plants, planters, plant care, accessories, and more delivered to your door. Want hands-on plant expertise IRL? Stop by one of our shops in NYC, Boston, Chicago, LA, or San Francisco.</p>
+   </div>
+</section>
+
+<!--footer1-->
+<footer class="brick">
+  <div class="block1">
+    <img src="img/plant.jpg" alt="lastplant">
+  </div>
+  <div class="block2">
+    <div class="textbox2">
+    <h2>Join Our<br> Rewards<br> Program</h2>
+    <p>Shopping with The Sill means you’re supported every step of your plant parenthood journey. Become a member today to start enjoying exclusive perks.</p>
+    <button>Learn More</button>
+    </div>
+  </div>
+</footer>
+
+<!--footer2-->
+<footer class="brick1">
+ 
+  <div id="rollbox">
+    <div class ="box">
+      <div class="rollbox1">
+        <a href="#"><img src="img/roll1.jpg" alt="roll1"></a>
+        <div id="rolltext">
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </div>
+      <div class="rollbox1">
+        <a href="#"><img src="img/roll2.jpg" alt="roll2"></a>
+        <div id="rolltext">
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </div>
+      <div class="rollbox1">
+        <a href="#"><img src="img/roll3.jpg" alt="roll3"></a>
+        <div id="rolltext">
+          <span>Shop The Look</span>
+          <br>
+          <span><i class="fa-brands fa-instagram"></i></span>
+        
+        </div>
+      </div>
+      <div class="rollbox1">
+        <a href="#"><img src="img/roll4.jpg" alt="roll4"></a>
+        <div id="rolltext">
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </div>
+      <div class="rollbox1">
+        <a href="#"><img src="img/roll5.jpg" alt="roll5"></a>
+        <div id="rolltext">
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </div>
+     </div>
+  </div>
+</footer>
+
+<!--footer3-->
+<footer class="brick2">
+  <div id = "allbox">
+    <div id="box1">
+      <img src="img/people.png" alt="people">
+      <h1>Visit Us In A Store Near You</h1>
+      <p>Our stores around the US are open for plant shopping, repotting, curbside pickup, in-person workshops, and more.</p>
+      <span><a href="#">Find Your Local Store
+        <div class="iconbox">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+      </a></span>
+    </div>
+    <hr>
+    <div class="box2">
+      <div class="textbox3">
+        <p>Customer Service</p>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping & Handling</a></li>
+          <li><a href="#">30-Day Guarantee</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="textbox3">
+        <p>Resources</p>
+        <ul>
+          <li><a href="#">Find Your Plant 🌱</a></li>
+          <li><a href="#">Plants Care Library</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="textbox3">
+        <p>My Sill</p>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Redeem Subscription</a></li>
+          <li><a href="#">Rewards Program</a></li>
+          <li><a href="#">Track My Order</a></li>
+        </ul>
+      </div>
+      <div class="textbox3">
+        <p>Explore</p>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Corporate Gifting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="box2">
+      <h2>Get the Dirt.</h2>
+      <p>Get plant care tips, exclusive offers, & event invites straight to your inbox. No spam ever.</p>
+      <form>
+        <input type="text" placeholder="Enter your email here..." >
+        <button>Subscribe</button>
+      </form>    
+    <div class="servicetext">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+    <div class="servicetext"> 
+      <a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+    <div class="servicetext">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="servicetext">
+      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a></div>
+   <div class="servicetext">
+      <a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+   <div class="servicetext">
+    <a href="#"><i class="fa-brands fa-tiktok"></i></a></div>
+   <div class="servicetext">
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+
+
+      </div>
+    
+  
+   <p class="number1">The</p>
+   <p class="number2">Sill</p>
+
+
+   
+   
+  </div>
+  
+</footer>
+
+<!--footer4-->
+<footer id ="lastbox">
+  <div id="lasttext1">
+   <p class="number3">Copyright 2022 - The Sill, Inc.</p>
+ </div>
+   <div id="lasttext2">
+   <ul>
+     <li><a href="#">Terms of Use</a></li>
+     <li><a href="#">Privacy Policy</a></li>
+     <li><a href="#">Accessibility</a> </li>
+     <li><a href="#">Do Not Sell My Info</a></li>
+   </ul>
+   </div>
+ </div>
+</footer>
+
+</body>
+</html>
